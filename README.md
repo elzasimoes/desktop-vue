@@ -35,4 +35,5 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## Screenshot
 
-![image](https://user-images.githubusercontent.com/12284488/82741529-f8636800-9d20-11ea-870d-b5f033f33eab.png)
+![image](https://user-images.githubusercontent.com/12284488/82741735-46796b00-9d23-11ea-9780-ace8c9a5fe14.png)
+
