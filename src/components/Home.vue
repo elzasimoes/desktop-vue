@@ -24,27 +24,29 @@
 </template>
 
 <script>
-import Card from './Card'
+import Card from './Card';
+import { ipcRenderer } from 'electron'
 
 export default {
   components: { Card },
   data: function () {
     return {
       files: [],
-      groupedWords: [
-          { name: 'you', amount: 900},
-          { name: 'he', amount: 853},
-          { name: 'i', amount: 1222},
-    
-      ]
+      groupedWords: []
     }
       },
     methods: {
       processSubtitles() {
-        console.log(this.files)
+        const paths = this.files.map(f => f.path)
+        ipcRenderer.send('process-subtitles', paths)
+        ipcRenderer.on('process-subtitles', (event, resp) => {
+          this.groupedWords = resp
+        })
+
     }
   }
 }
+
 </script>
 
 <style>
