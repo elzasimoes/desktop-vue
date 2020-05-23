@@ -20,7 +20,25 @@ export default {
       groupedWords: [
           { name: 'you', amount: 900},
           { name: 'he', amount: 853},
-          { name: 'i', amount: 1222}
+          { name: 'i', amount: 1222},
+          { name: 'he', amount: 853},
+          { name: 'i', amount: 1222},
+          { name: 'he', amount: 853},
+          { name: 'i', amount: 1222},
+          { name: 'he', amount: 853},
+          { name: 'i', amount: 1222},
+          { name: 'he', amount: 853},
+          { name: 'i', amount: 1222},
+          { name: 'he', amount: 853},
+          { name: 'i', amount: 1222},
+          { name: 'he', amount: 853},
+          { name: 'i', amount: 1222},
+          { name: 'he', amount: 853},
+          { name: 'i', amount: 1222},
+          { name: 'he', amount: 853},
+          { name: 'i', amount: 1222},
+          { name: 'he', amount: 853},
+          { name: 'i', amount: 1222},
       ]
     }
   }
@@ -28,5 +46,9 @@ export default {
 </script>
 
 <style>
-
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 </style>
