@@ -1,12 +1,14 @@
 module.exports = words => {
     return new Promise((resolver, reject) => {
         try {
-            const groupedWords = works.reduce((obj, word) => {
+
+            const groupedWords = words.reduce((obj, word) => {
                 if (obj[word]) {
                     (obj[word]) = (obj[word]) + 1
                 } else {
                     (obj[word]) = 1
                 }
+
                 return obj
             }, {})
 
